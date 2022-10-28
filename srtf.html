@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="srtf.css" />
+    <title>SRTF</title>
+  </head>
+  <body>
+    <h1>Shortest Remaining Time First</h1>
+    <a class="home_btn" href="index.html">Home</a>
+    <marquee >
+        Shortest Remaining Time First (SRTF) is the preemptive version of Shortest
+      Job Next (SJN) algorithm, where the processor is allocated to the job
+      closest to completion.n the SRTF scheduling algorithm, the execution of
+      any process can be stopped after a certain amount of time. On arrival of
+      every process, the short-term scheduler schedules those processes from the
+      list of available processes & running processes that have the least
+      remaining burst time.
+        </marquee>
+    
+    <div class="row">
+        <div class="box col-lg-6 col-md-12">
+        <h2>Advantages of SRTF</h2>
+        <p>The main advantage of the SRTF algorithm is that it makes the
+            processing of the jobs faster than the SJF algorithm, mentioned it's
+            overhead charges are not counted.</p>
+        </div>
+        <div class="box col-lg-6 col-md-12">
+        <h2>Disadvantages of SRTF</h2>
+        <p>In SRTF, the context switching is done a lot more times than in SJN
+            due to more consumption of the CPU's valuable time for processing. The
+            consumed time of CPU then adds up to its processing time and which
+            then diminishes the advantage of fast processing of this algorithm.</p>
+        </div>
+      </div>
+      <form>
+        <label for="">Enter No of Process</label>
+        <input type="text">
+        <br>
+        <label for="">Enter Arrival Time</label>
+    <input type="text" class="bt">
+    <br>
+        <label for="">Enter Burst Time</label>
+        <input type="text" class="bt">
+        <button type="submit">Calculate</button>
+        </form>
+  </body>
+</html>
